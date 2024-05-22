@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/668264ef85.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+</head>
+
+<body class="font-[Poppins] h-screen">
+    <header class="navbar bg-white drop-shadow-2xl">
+        <nav class="flex items-center w-[100%] height-[94px]">
+            <div class="grid mx-14 w-full grid-cols-2">
+                <div>
+                    <h1 class="text-[30px] py-2 font-bold ">SaudagarFarm</h1>
+                </div>
+                <div
+                        class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] w-full items-center justify-end flex">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
+                        <li>
+                            <a class="hover:text-black text-[25px] font-semibold" href="/home">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-black text-[25px] font-semibold" href="/about">About us</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-black text-[25px] font-semibold" href="/product">Products</a>
+                        </li>
+                    </ul>
+                    <a href="login.html">
+                        <i class="fa-solid fa-user fa-xl ml-[50px]" style="color: #000000;"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Slide 1 -->
+    <div class="slide1 bg-[#4B6C4D] h-screen bg-opacity-[96%] px-40 ">
+        <div class="mx-1 h-full items-center grid grid-cols-2">
+            <div class="h-full items-center flex justify-end">
+                <div class="mt-[20px] mr-10">
+                    <h1 class="font-bold text-white text-[60px] text-left">
+                        SaudagarFarm
+                    </h1>
+                    <div class="bg-white h-[6px] rounded-full mb-6 mr-28"></div>
+                    <p class="text-white text-justify">Saudagar farm  menyediakan sapi dan domba  yang fokus pada pemeliharaan dan penjualan hewan ternak tersebut. Saudagar Farm memiliki fasilitas untuk pemotongan dan pengolahan daging. Tujuan utamanya adalah memproduksi sapi dan domba yang sehat dan berkualitas untuk dijual kepada konsumen atau ke pasar lokal maupun internasional.</p>
+                    <div class="mt-8">
+                        <a class="border rounded-2xl border-2 py-3 px-5 font-semibold text-white " href="#Product">
+                            Explore More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex h-full items-center ml-20">
+                <img src="images/about-1.png" alt="" class="img-about-1 max-h-80 mr-10">
+                <img src="images/about-2.png" alt="" class="img-about-2 max-h-80 mt-40">
+            </div>
+        </div>
+    </div>
+    <!-- Product Category-->
+    <div class="about-slide-2 bg-[#97876C] ">
+        <div class="text-center font-bold text-white text-[60px] pt-20" id="Product">
+            Our Product
+            <div class="bg-white h-[6px] mx-[70vh] rounded-full"></div>
+        </div>
+        <div class="justify-center items-center flex mt-10">           
+               <article class="card__article">
+                  <img src="images/domba-tanduk.png" alt="image" class="card__img-1 drop-shadow-2xl">
+                  <div class="card__data">
+                     <h2 class="card__title ">Domba Tanduk</h2>
+                     <span class="card__description mt-[-10px]">Mulai dari Rp 2.250.000</span>
+                     <a href="#Product-list" class="card__button">Read More</a>
+                  </div>
+               </article>
+   
+               <article class="card__article rounded-2xl mx-16">
+                  <img src="images/sapi.png" alt="image" class="card__img-2 mt-[50px] drop-shadow-2xl">
+                  <div class="card__data">
+                     <h2 class="card__title">Sapi Premium</h2>
+                     <span class="card__description mt-[-10px]">Mulai dari Rp 19.500.000</span>
+                     <a href="#Product-list" class="card__button">Read More</a>
+                  </div>
+               </article>
+   
+               <article class="card__article">
+                  <img src="images/domba-dugul.png" alt="image" class="card__img-3 drop-shadow-2xl">
+                  <div class="card__data">
+                     <h2 class="card__title">Domba Dugul</h2>
+                     <span class="card__description mt-[-10px]">Mulai dari Rp 2.000.000</span>
+                     <a href="#Product-list" class="card__button">Read More</a>
+                  </div>
+               </article>
+        </div>
+        <div class="justify-center text-center text-white mt-10 pb-20">
+            <p class="font-semibold text-[20px]">*Hover the product for more information </p>
+            <a class="mt-[25px] border rounded-2xl border-2 py-4 mx-[82vh] justify-center items-center flex" href="https://wa.me/085314436356">
+                <i class="fa-brands fa-whatsapp fa-2xl mr-5"></i>
+                <div class=" font-semibold text-white text-[20px]">Order Now</div>
+            </a>
+        </div>
+    </div>
+    <!-- Product -->
+    <div class="bg-[#F0F0F0] ">
+        <div class="font-bold pt-[80px] text-[40px] text-center" id="Product-list">
+            Choose Ur Product
+        </div>
+        <!-- Category -->
+        <div class="flex mt-[25px] justify-center items-center">
+            <div class="h-sce">
+                <a class="border-[#599B5D] bg-[#599B5D] rounded-xl border-[1.5px] py-2 px-5 font-semibold text-white" href="#">
+                    Sapi Medium
+                </a>
+            </div>
+            <div>
+                <a class="border-black rounded-xl border-[1.5px] py-2 px-5 font-semibold text-black ml-[20px]" href="#">
+                    Sapi Premium
+                </a>
+            </div>
+            <div>
+                <a class="border-black rounded-xl border-[1.5px] py-2 px-5 font-semibold text-black ml-[20px]" href="#">
+                    Sapi Super
+                </a>
+            </div>
+            <div>
+                <a class="border-black rounded-xl border-[1.5px] py-2 px-5 font-semibold text-black ml-[20px]" href="#">
+                    Domba Dugul
+                </a>
+            </div>
+            <div>
+                <a class="border-black rounded-xl border-[1.5px] py-2 px-5 font-semibold text-black ml-[20px]" href="#">
+                    Domba Tanduk
+                </a>
+            </div>
+
+            <!-- Admin -->
+            <a href="add.html">
+                <a href="/add" class="bg-[#1D9BF0] flex rounded-xl border-[1.5px] py-2 px-5 font-semibold text-white ml-[20px]">
+
+                    <i class="fa-solid fa-plus mt-1 mr-2"></i>
+                    Add product
+                </a>
+            </a>
+        </div>
+        <!-- Card Product -->
+        <div class="flex mt-[50px] justify-center items-center">
+            <!-- card-product-1-->
+            <div class="card-product w-[250px] bg-white rounded-xl justify-center" th:each="product : ${products}">
+                <div class="mb-[20px]">
+                    <div class="mx-[30px] mt-[40px] mb-[30px] flex justify-center">
+                        <img th:src="@{'/images/' + ${product.imageFileName}}" alt="" class="product-img rounded-[10px]">
+                    </div>
+                    <div class="font-semibold mt-[30px] text-center" th:text="${product.namaHewan}">
+                    </div>
+                    <div class="flex border border-black border-[1.5px] mx-[30px] text-left mt-[12px] pl-[10px] rounded-[7px] text-semibold py-1">
+                        <i class="fa-solid fa-weight-scale mt-[3px]" style="color: #000000;"></i>
+                        <div class="ml-3" th:text="${product.berat}">400 kg</div>
+                    </div>
+                    <div class="flex border border-black border-[1.5px] mx-[30px] text-left  pl-[7px] my-[10px] rounded-[7px] text-semibold py-1">
+                        <i class="fa-solid fa-tags mt-[4px] ml-1" style="color: #000000;"></i>
+                        <div class="ml-3" th:text="${product.harga}">Rp. 29.000.000</div>
+                    </div>
+                    <!-- admin fitur -->
+                    <div class="flex justify-center ">
+                        <a th:href="@{/edit(id=${product.id})}" class="flex border bg-[#1D9BF0] border-[#1D9BF0] border-[1.5px] text-left pl-[10px] rounded-[7px] text-semibold py-1 w-[80px]">
+                            <i class="fa-solid fa-pen-to-square mt-[2px]" style="color: #ffffff;"></i>
+                            <div class="ml-2 text-white font-semibold">Edit</div>
+                        </a>
+                        <button class="flex border bg-[#FF0000] border-[#FF0000] border-[1.5px] text-left pl-[10px] rounded-[7px] text-semibold py-1 w-[100px] ml-2 ">
+                            <i class="fa-solid fa-trash mt-[3px]" style="color: #ffffff;"></i>
+                            <a th:href="@{/delete(id=${product.id})}">
+                            <div class="ml-2 text-white font-semibold" >Delete</div>
+                            </a>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex mt-[50px] mb-11 justify-center items-center pb-16">
+            <!-- card-product-2-->
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+<!-- Foooter -->
+<section class="bg-white justify-item">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+            <div class="px-5 py-2">
+                <a href="homepage.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Home
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="about.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    About
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Product
+                </a>
+            </div>
+        </nav>
+        <div class="flex justify-center mt-8 space-x-6 ">
+            <a href="https://www.facebook.com/share/wy4egFHj1SLHBYXy/?mibextid=qi2Omg" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Facebook</span>
+                <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/saudagarfarm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Instagram</span>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="https://wa.me/085314436356" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Whatsapp</span>
+                <i class="fa-brands fa-whatsapp fa-xl"></i>
+            </a>
+            <a href="https://twitter.com/saudagarfarm" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">X</span>
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+            </a>
+            <a href="https://www.youtube.com/@SaudagarFarm" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">fa-youtube</span>
+                <i class="fa-brands fa-youtube fa-xl"></i>
+            </a>
+        </div>
+        <p class="mt-8 text-base leading-6 text-center text-gray-400">
+            © 2024 SaudagarFarm, Inc. All rights reserved.
+        </p>
+    </div>
+</section>
+</html>
+<script src="script.js"></script>

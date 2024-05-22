@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/668264ef85.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+</head>
+
+<body class="">
+    <header class="navbar bg-white drop-shadow-2xl">
+        <nav class="flex items-center w-[100%] height-[94px]">
+            <div class="grid mx-14 w-full grid-cols-2">
+                <div>
+                    <h1 class="text-[30px] py-2 font-bold ">SaudagarFarm</h1>
+                </div>
+                <div
+                    class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] w-full items-center justify-end flex">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
+                        <li>
+                            <a class="hover:text-black text-[25px] font-semibold" href="/home">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-black text-[25px] font-semibold" href="/about">About us</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-black text-[25px] font-semibold" href="/product">Products</a>
+                        </li>
+                    </ul>
+                    <a href="login.html">
+                        <i class="fa-solid fa-user fa-xl ml-[50px]" style="color: #000000;"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Slide 1 -->
+    <div class="slide1 bg-[#4B6C4D] h-[100vh] bg-opacity-[96%] pt-10 ">
+        <div class="mx-10 mt-[40px]">
+            <div class="text-center pb-2 pt-10 mx-24 flex ">
+                <h1 class="font-bold text-white text-[40px] text-left mr-40">
+                    Welcome to <br>
+                    SaudagarFarm
+                </h1>
+                <h1 class="text-white text-justify pt-1 ml-[100px] text-[16px] ">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis ex maxime delectus sequi obcaecati pariatur saepe consequatur quidem, exercitationem vel labore quia, aperiam tempora ea itaque, at nemo molestias!
+                </h1>
+            </div>
+            <div class="mt-7 ml-24">
+                <a class="border rounded-2xl border-2 py-3 px-5 font-semibold text-white" href="#Gallery">Explore More</a>
+            </div>
+            <div class="flex justify-center">
+                <img src="images/img-home.png" alt="" class="img-1 border-[#385239] border-[10px] rounded-[20px] mt-10">
+            </div>
+        </div>
+    </div>
+    <!-- Gallery -->
+    <div class="bg-[#76603D] bg-opacity-[76%] ">
+        <div class="font-extrabold text-white text-center text-[70px] pt-80" id="Gallery">
+            Gallery
+        </div>
+        <div class="bg-white h-[5px] mx-[515px] mt-1 rounded-md"></div>
+        <div class="text-[18px] text-white text-center mt-4">
+            Beberapa dokumentasi kegiatan dan fasilitas di SaudagarFarm
+        </div>
+        <div class="flex justify-center">
+                <img src="/images/Mask group-1.png" alt="" class="gallery-1 mt-[-50px] pr-[-100px]">
+                <div class="ml-[-110px]">
+                    <img src="/images/Mask group-2.png" alt="" class="gallery-2">
+                    <img src="/images/Mask group-3.png" alt="" class="gallery-3 mt-[-70px]">
+                </div>
+                <div class="ml-[-110px]">
+                    <img src="/images/Mask group-4.png" alt="" class="gallery-4  mt-[-5px]">
+                    <img src="/images/Mask group-5.png" alt="" class="gallery-5 mt-[-80px] ">
+                </div>
+        </div>
+    </div>
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+<!-- Foooter -->
+<section class="bg-white">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Home
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="about.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    About
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Product
+                </a>
+            </div>
+        </nav>
+        <div class="flex justify-center mt-8 space-x-6">
+            <a href="https://www.facebook.com/share/wy4egFHj1SLHBYXy/?mibextid=qi2Omg" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Facebook</span>
+                <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/saudagarfarm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Instagram</span>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="https://wa.me/085314436356" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Whatsapp</span>
+                <i class="fa-brands fa-whatsapp fa-xl"></i>
+            </a>
+            <a href="https://twitter.com/saudagarfarm" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">X</span>
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+            </a>
+            <a href="https://www.youtube.com/@SaudagarFarm" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">fa-youtube</span>
+                <i class="fa-brands fa-youtube fa-xl"></i>
+            </a>
+        </div>
+        <p class="mt-8 text-base leading-6 text-center text-gray-400">
+            © 2024 SaudagarFarm, Inc. All rights reserved.
+        </p>
+    </div>
+</section>
+
+</html>

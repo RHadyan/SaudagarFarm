@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/668264ef85.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="font-[Poppins] h-screen">
+    <header class="navbar bg-white drop-shadow-2xl">
+        <nav class="flex items-center w-[100%] height-[94px]">
+            <div class="grid mx-14 w-full grid-cols-2">
+                <div>
+                    <h1 class="text-[30px] py-2 font-bold ">SaudagarFarm</h1>
+                </div>
+                <div
+                        class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] w-full items-center justify-end flex">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
+                        <li>
+                            <a class="hover:text-black text-[25px] font-semibold" href="/home">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-black text-[25px] font-semibold" href="/about">About us</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-black text-[25px] font-semibold" href="/product">Products</a>
+                        </li>
+                    </ul>
+                    <a href="login.html">
+                        <i class="fa-solid fa-user fa-xl ml-[50px]" style="color: #000000;"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Slide 1 -->
+    <div class="slide1 bg-[#4B6C4D] h-screen bg-opacity-[96%] px-40">
+        <div class="mx-1 h-full items-center grid grid-cols-2">
+                <div class="flex h-full items-center ">
+                    <img src="/images/about-1.png" alt="" class="img-about-1 max-h-80 mr-10">
+                    <img src="/images/about-2.png" alt="" class="img-about-2 max-h-80 mt-40">
+                </div>
+                <div class="h-full items-center flex justify-end">
+                    <div class="mt-[20px]">
+                        <h1 class="font-bold text-white text-[60px] text-left">
+                            SaudagarFarm
+                        </h1>
+                        <div class="bg-white h-[6px] rounded-full mb-6 mr-28"></div>
+                        <p class="text-white text-justify">Saudagar Farm merupakan peternakan hewan yang terletak di Cugenang, Cianjur. Saudagar farm menyediakan berbagai macam tipe sapi dan domba.</p>
+                        <div class="mt-8">
+                            <a class="border rounded-2xl border-2 py-3 px-5 font-semibold text-white " href="#Team">
+                                Explore More</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- Gallery -->
+    <div class="about-slide-2 bg-[#97876C] h-[850px] bg-opacity-[100%] pt-[250px] z-5">
+        <div class="font-bold text-white text-center text-[60px] mt-[-120px] pt-[0px]" id="Team">
+            Meet Our Team
+        </div>
+        <div class="text-white text-center mx-[200px]">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt at explicabo optio iure dolore, libero, et voluptas excepturi eaque mollitia suscipit cupiditate voluptatem laboriosam repellendus minus impedit 
+        </div>
+        <div class="flex justify-center mt-[45px]">
+            <div>
+                <img src="images/owner-1.png" alt="" class="owner-1">
+                <div class="text-center font-bold">
+                    <a class="Nama-owner bg-white py-3 px-4 rounded-[10px]">Saudagar Rivandi</a> 
+                </div>
+            </div>
+            <div>
+                <img src="images/owner-2.png" alt="" class="owner-1">
+                <div class="text-center font-bold">
+                    <a class="Nama-owner bg-white py-3 px-4 rounded-[10px]">Saudagar Bismart</a> 
+                </div>
+            </div>
+            <div>
+                <img src="images/owner-3.png" alt="" class="owner-1">
+                <div class="text-center font-bold">
+                    <a class="Nama-owner bg-white py-3 px-4 rounded-[10px]">Saudagar Dana</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide-3 -->
+    <div class="bg-[#76603D] h-[1500px] mt-[-40px]">
+        <!-- Benefit card -->
+        <div class="mt-[30px] font-bold text-white pt-[100px] text-[20vh] text-center z-0 mb-[-50px]">
+            Benefit
+            </div>
+        <div class="flex benefit bg-[#537254] mx-[200px] h-[400px] rounded-[80px] justify-center z-10">
+            <div>
+                <div class="flex h-[200px] w-[200px] bg-[#D1D1D1] my-[70px] rounded-full items-center justify-center border-[7px] border-black">
+                    <i class="benefit-1 fa-solid fa-truck-fast fa-lg " style="color: #000000;"></i>
+                </div>
+                <div class="text-white font-bold text-[35px] mt-[-60px] text-center">
+                    Free Shipping 
+                </div>
+            </div>
+            <div class="mx-24">
+                <div class="flex h-[200px] w-[200px] bg-[#D1D1D1]  my-[70px] rounded-full items-center justify-center border-[7px] border-black">
+                    <i class="benefit-2 fa-solid fa-medal fa-lg " style="color: #000000;"></i>
+                </div>
+                <div class="text-white font-bold text-[35px] mt-[-60px] text-center">
+                    Best Quality
+                </div>
+            </div>
+            <div >
+                <div class="flex h-[200px] w-[200px] bg-[#D1D1D1] my-[70px] rounded-full items-center justify-center border-[7px] border-black">
+                    <i class="benefit-3 fa-solid fa-shield-halved fa-lg " style="color: #000000;"></i>
+                </div>
+                <div class="text-white font-bold text-[35px] mt-[-60px] text-center">
+                    Warranty
+                </div>
+            </div>
+        </div>
+
+        <!-- Location -->
+        <div class="text-center text-white font-semibold text-[50px] mt-[150px]">
+            Where is Saudagar Farm?
+        </div>
+        <div class=" flex mt-[70px] justify-center">
+            <!-- gmaps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.419538350418!2d107.06699409218962!3d-6.808947600783008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684d26f4d016bb%3A0xba77471813e81a3c!2sSaudagar%20Farm!5e0!3m2!1sid!2sid!4v1715223479211!5m2!1sid!2sid" width="400" height="400" style="border:4;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map ml-[150px] rounded-[50px]"></iframe>
+            <!-- location kanan -->
+            <div class="mr-[100px] ml-[180px] text-white font-semibold mt-4">
+                <div class="flex mt-[5px] ml-[-60px] text-[20px]">
+                    <i class="fa-solid fa-location-dot fa-2xl mt-[28px] mr-[30px]"></i>
+                    <div>
+                        Salakaung Store <br>
+                        110 meter dari salakaung store
+                    </div>
+                </div>
+                <div class="flex mt-[30px] ml-[-60px] text-[20px]">
+                    <i class="fa-solid fa-location-dot fa-2xl mt-[28px] mr-[30px]"></i>
+                    <div>
+                        MIS Islamiyah<br>
+                        220 meter dari MIS Islamiyah
+                    </div>
+                </div>
+                <div class="flex mt-[30px] ml-[-60px] text-[20px]">
+                    <i class="fa-solid fa-location-dot fa-2xl mt-[28px] mr-[30px]"></i>
+                    <div>
+                        Ruang Farm <br>
+                        280 meter dari Ruang Farm
+                    </div>
+                </div>
+                <div class="flex mt-[30px] ml-[-60px] text-[20px]">
+                    <i class="fa-solid fa-location-dot fa-2xl mt-[28px] mr-[30px]"></i>
+                    <div>
+                        Miemie Farm <br>
+                        120 meter dari Miemie Farm
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+<!-- Foooter -->
+<section class="bg-white ">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+            <div class="px-5 py-2">
+                <a href="homepage.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Home
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="about.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    About
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="product.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Product
+                </a>
+            </div>
+        </nav>
+        <div class="flex justify-center mt-8 space-x-6">
+            <a href="https://www.facebook.com/share/wy4egFHj1SLHBYXy/?mibextid=qi2Omg" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Facebook</span>
+                <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/saudagarfarm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Instagram</span>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="https://wa.me/085314436356" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Whatsapp</span>
+                <i class="fa-brands fa-whatsapp fa-xl"></i>
+            </a>
+            <a href="https://twitter.com/saudagarfarm" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">X</span>
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+            </a>
+            <a href="https://www.youtube.com/@SaudagarFarm" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">fa-youtube</span>
+                <i class="fa-brands fa-youtube fa-xl"></i>
+            </a>
+        </div>
+        <p class="mt-8 text-base leading-6 text-center text-gray-400">
+            © 2024 SaudagarFarm, Inc. All rights reserved.
+        </p>
+    </div>
+</section>
+
+</html>

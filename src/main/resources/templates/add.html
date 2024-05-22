@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="edit.css">
+    <script src="https://kit.fontawesome.com/668264ef85.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body class="bg-[#F0F0F0]">
+        <form class="form bg-white my-10 mx-80 border border-2 p-10 rounded-2xl" method="post" enctype="multipart/form-data" action="/create" th:object="${productDto}">
+            <a class="flex justify-end" href="/product">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="#f40d0d" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m3.6 5.2a1 1 0 0 0-1.4.2L12 10.333L9.8 7.4a1 1 0 1 0-1.6 1.2l2.55 3.4l-2.55 3.4a1 1 0 1 0 1.6 1.2l2.2-2.933l2.2 2.933a1 1 0 0 0 1.6-1.2L13.25 12l2.55-3.4a1 1 0 0 0-.2-1.4"/></svg>
+            </a>
+            <div class="flex">
+                <div class="font-semibold text-[25px]">
+                    Add Product
+                </div>
+            </div>         
+            <div class="h-[1px] bg-gray-300"></div>
+            <div class="mb-5 mt-3">
+                <label class="block mb-2 text-sm font-medium text-gray-900 ">
+                    Name
+                </label>
+                <input type="text" th:field="${productDto.namaHewan}" id="Product" class="input shadow-sm border border-gray-300 text-black text-sm rounded-lg block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 text-black" placeholder="Amanah 1" required />
+            </div>
+            <div class="mb-5 mt-3">
+                <label class="block mb-2 text-sm font-medium text-gray-900 ">
+                    Price
+                </label>
+                <input type="text" th:field="${productDto.harga}" id="Product" class="input shadow-sm border border-gray-300 text-black text-sm rounded-lg block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 text-black" placeholder="Rp 20.000.000" required />
+            </div>
+            <div class="mb-5 mt-3 flex ">
+                <div class="w-[260px]">
+                    <label class="block mb-2 text-sm font-medium text-gray-900">
+                        Weight
+                    </label>
+                    <input type="text" th:field="${productDto.berat}"  id="Product" class="input  shadow-sm border border-gray-300 text-black text-sm rounded-lg block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 text-black" placeholder="433 Kg" required />
+                </div>
+                <div class="w-[260px] ml-10">
+                    <label class="block mb-2 text-sm font-medium text-gray-900">
+                        Category
+                    </label>
+                    <select th:field="${productDto.kategori}" id="" class="border shadow-sm border border-gray-300 text-black text-sm rounded-lg block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 text-black">
+                        <option value="SapiMedium">Sapi Medium</option>
+                        <option value="SapiPremium">Sapi Premium</option>
+                        <option value="SapiSuper">Sapi Super</option>
+                        <option value="DombaDugul">Domba Dugul</option>
+                        <option value="DombaTanduk">Domba Tanduk</option>
+                    </select>
+                </div>
+            </div>
+            <div class=" mb-7">
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-black"     for="user_avatar">
+                    Upload file
+                </label>
+                <input th:field="${productDto.imageFile}" class="block w-full text-sm text-gray-900 rounded-lg cursor-pointer  dark:text-gray-400 focus:outline-none dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="user_avatar_help" id="user_avatar" type="file">
+            </div>
+            <button type="submit">
+            <a class="flex bg-[#1D9BF0] py-2 rounded-lg justify-center">
+                <div class="font-semibold text-white">Add Product</div>
+            </a>
+            </button>
+        </form>
+</body>
+</html>
